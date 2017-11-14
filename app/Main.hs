@@ -7,7 +7,5 @@ import System.IO
 
 
 main :: IO ()
-main = loop
- where
-  loop = BC8.hPutStrLn stdout "y" >> loop
+main = mapM_ (BC8.hPutStrLn stdout) (repeat "y")
 

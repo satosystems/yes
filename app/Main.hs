@@ -7,5 +7,5 @@ import System.IO
 
 
 main :: IO ()
-main = mapM_ (BC8.hPutStrLn stdout) (repeat "y")
+main = mapM_ (BC8.hPut stdout) (repeat "y\n")
 
